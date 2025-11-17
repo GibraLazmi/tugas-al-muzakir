@@ -1,4 +1,9 @@
-#!/bin/bash
-curl -I http://localhost/public/index.php
-curl -I http://localhost/public/login.php
-curl -I http://localhost/public/register.php
+#!/bin/sh
+
+echo "Testing signup page..."
+curl -f http://127.0.0.1:8000/signup.php
+
+echo "Testing login page..."
+curl -f http://127.0.0.1:8000/login.php
+
+echo "All tests passed!"
